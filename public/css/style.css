@@ -59,7 +59,7 @@ body {
   font-size: 70px;
   width:inherit;
   /* height: 400px !important; */
-  padding: 175px;
+  padding: 175px 0px;
   margin: 0px;
 }
 
@@ -250,11 +250,28 @@ img {
 }
 
 /* Styling About */
-#about {
+/* #about {
+  padding: 80px;
+} */
+
+
+.about {
   border-style: solid;
   border-radius: 15px;
   padding: 40px;
-  margin: 35px 350px;
+  margin: 100px 200px;
+}
+
+@media only screen and (max-width: 730px) {
+  .about {
+    margin: 50px 100px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about {
+    margin: 0px;
+  }
 }
 /* Footer  */
 footer {
