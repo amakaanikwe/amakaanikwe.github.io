@@ -218,13 +218,32 @@ a:link {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
+@media only screen and (max-width: 1180px) {
+  .panel-heading {
+    height: 160px;
+  }
+}
+
 .panel-body {
   padding: 0px;
 }
 
 .ulPadding {
+  height: 200px;
   padding: 20px;
   text-align: left;
+}
+
+@media only screen and (max-width: 1180px) {
+  .ulPadding {
+    height: 240px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .ulPadding {
+    height: 365px;
+  }
 }
 
 .panel-footer {
@@ -259,7 +278,7 @@ img {
   border-style: solid;
   border-radius: 15px;
   padding: 40px;
-  margin: 100px 200px;
+  margin: 100px 0px;
 }
 
 @media only screen and (max-width: 730px) {
