@@ -141,26 +141,11 @@ hr {
   background-color: white;
 }
 
-/* .abtColor {
-  color: white;
-  background-color: #a98544;
-} */
-
-/* .info {
-  color: black;
-
-
-} */
-
 #contactContainer {
     background-color:#06171d;
     color:#FCFEFF;
     }
-/*
-the following: .logo & @media screen ;
-media queries will center the "logo column" on screens smaller than 768 pixels wide
-color: #f4511e; adds same color from top box
-*/
+
  .logo {
   color: #133957;
   font-size: 200px;
@@ -267,12 +252,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* Styling About */
-/* #about {
-  padding: 80px;
-} */
-
 
 .about {
   border-style: solid;
