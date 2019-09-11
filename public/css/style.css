@@ -71,14 +71,8 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
   transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
   background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
   z-index: -1;
 }
 
@@ -151,7 +145,6 @@ hr {
   font-size: 200px;
   }
 
-/* Add color to all icons and set the font-size */
 .logo-small {
   color: #bed8da;
   font-size: 50px;
@@ -279,4 +272,18 @@ footer .glyphicon {
   font-size: 20px;
   margin-bottom: 20px;
   color: #F5DEB3;
+}
+
+footer .glyphicon:hover {
+  color: rgba(245, 222, 179, 0.541);
+}
+
+footer .fab {
+  font-size: 20px;
+  margin: 5px;
+  color: #F5DEB3;
+}
+
+footer .fab:hover {
+  color: rgba(245, 222, 179, 0.541);
 }
