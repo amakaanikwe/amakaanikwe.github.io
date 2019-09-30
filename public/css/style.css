@@ -122,6 +122,19 @@ hr {
   margin: 35px;
 }
 
+.panel-body img{
+    opacity: 0.8; 
+  }
+
+.panel-body img:hover{
+  opacity: 100;
+  transition: 0.3s;
+}
+
+ul.lsStyle {
+  color: black;
+}
+
 /* Container */
 .container-fluid {
   padding: 60px 50px;
