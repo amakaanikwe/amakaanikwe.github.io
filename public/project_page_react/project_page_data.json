@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Brooklyn Brew",
+        "image": "https://www.dropbox.com/s/506stqyynhnzscq/coffeeappicon.jpg?raw=1",
+        "features": ["Mobile first responsive web design","React components used in menu section","Order now page added to menu section","Code features ES6 syntax","AWS backend"],
+        "git": "https://github.com/amakaanikwe/coffee-shop",
+        "site": "https://master.d2oqk1scuumzni.amplifyapp.com/"
+    },
+    {
+        "title": "Producer Display",
+        "image": "https://master.d3l4gvldg7aa9z.amplifyapp.com/",
+        "features": ["Mobile first responsive web design","he AngularJS  framework powers this web app as part of the mvc architectural pattern","Features deep linking and routing","CCode has been refactored to include latest  ES6 syntax"],
+        "git": "https://github.com/amakaanikwe/Bric-Sheets",
+        "site": "https://master.d3l4gvldg7aa9z.amplifyapp.com/"
+    },
+    {
+        "title": "Portfolio Site",
+        "image": "https://amakaanikwe.github.io/",
+        "features": ["Mobile first responsive web design","Parallax scrolling, fade in navbar & title, scrollspy added to create the feeling of interactivity","Features HTML5 & CSS3 design standards","Sass is used to refactor CSS","Node/Express Back-End","Contact to Gmail functionality","Github backend"],
+        "git": "https://github.com/amakaanikwe/Portfolio-Site",
+        "site": "https://amakaanikwe.github.io/"
+    },
+    {
+        "title": "Access Financial",
+        "image": "",
+        "features": ["Mobile first responsive web design","","","",""],
+        "git": "https://github.com/amakaanikwe/Access-Financial",
+        "site": "https://access-financial-eb167.firebaseapp.com/"
+    },
+    {
+        "title": "Brooklyn Brew",
+        "image": "",
+        "features": ["Mobile first responsive web design","","","",""],
+        "git": "",
+        "site": ""
+    },
+
+
+]
