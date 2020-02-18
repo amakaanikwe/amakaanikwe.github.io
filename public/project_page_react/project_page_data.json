@@ -10,7 +10,7 @@
     {
         "id": 2,
         "title": "Producer Display",
-        "image": "https://master.d3l4gvldg7aa9z.amplifyapp.com/",
+        "image": "https://www.dropbox.com/s/s9uysiwwk0f2xw7/ProducerSite_Icon.png?raw=1",
         "features": ["Mobile first responsive web design","he AngularJS  framework powers this web app as part of the mvc architectural pattern","Features deep linking and routing","CCode has been refactored to include latest  ES6 syntax"],
         "git": "https://github.com/amakaanikwe/Bric-Sheets",
         "site": "https://master.d3l4gvldg7aa9z.amplifyapp.com/"
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "title": "Portfolio Site",
-        "image": "https://amakaanikwe.github.io/",
+        "image": "https://www.dropbox.com/s/6no8o6uslo65grl/landingImageappicon.jpg?raw=1",
         "features": ["Mobile first responsive web design","Parallax scrolling, fade in navbar & title, scrollspy added to create the feeling of interactivity","Features HTML5 & CSS3 design standards","Sass is used to refactor CSS","Node/Express Back-End","Contact to Gmail functionality","Github backend"],
         "git": "https://github.com/amakaanikwe/Portfolio-Site",
         "site": "https://amakaanikwe.github.io/"
@@ -38,7 +38,7 @@
         "features": ["Mobile first responsive web design","","","",""],
         "git": "",
         "site": ""
-    },
+    }
 
 
 ]
