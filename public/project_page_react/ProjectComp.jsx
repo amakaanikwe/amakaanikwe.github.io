@@ -15,12 +15,15 @@ class ProjectComponent extends React.Component{
                   <div className="col-lg-5">
                     <a href={}><img
                     class="img-responsive"
-                    src={}
+                    src={this.props.data.image}
                     width="400"
                     /></a>
                   </div>
                   <div className="col-lg-7">
-                    <h2>{}</h2>
+                    <h2>{this.props.data.title}</h2>
+                    <p>
+                        {this.props.data.features}
+                    </p>
                     <footer></footer>
                   </div>
               </div>
