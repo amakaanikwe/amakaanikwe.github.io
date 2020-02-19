@@ -267,7 +267,7 @@ a.moreButton:link, a.moreButton:visited {
 a.moreButton:hover, a.moreButton:active {
   background-color: white;
   color: rgb(17, 50, 65);
-  border: 1px solid #133957;
+  border: .5px solid #133957;
   border-radius: 5px;
 }
 
