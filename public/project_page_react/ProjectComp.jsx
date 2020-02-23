@@ -1,4 +1,5 @@
 import React from 'react';
+import "./project_page.css"
 
 class ProjectComponent extends React.Component{
   constructor(props) {
