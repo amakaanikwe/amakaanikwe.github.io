@@ -1,13 +1,14 @@
 const express = require("express");
-const log = console.log;
 const app = express();
 require('dotenv').config();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const path = require("path");
+const log = console.log;
 
 const PORT = 8080;
 
+// Data parsing
 app.use(bodyParser.urlencoded({extended: true}));
 
 //Static Folder
