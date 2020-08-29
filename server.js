@@ -37,14 +37,26 @@ app.post('/contact', function (req, res) {
     text: `${req.body.name} (${req.body.email}) says: 
     ${req.body.message}`
   };
-  smtpTrans.sendMail(mailOpts, function (error, response) {
+  
+  smtpTrans.sendMail(mailOpts, function(error, res) { 
     if (error) { 
-      res.render('contact-failure');
-    }
-    else {
-      res.render('contact-success');
-    }
+          res.json( { message: "You attempted to send a message but this is not implemented yet." });
+        }
+        else {
+          res.json( { message: "You attempted to send a message but this is not implemented yet." });
+        }
+
   });
+
+  // smtpTrans.sendMail(mailOpts, function (error, response) {
+  //   if (error) { 
+  //     res.render('contact-failure');
+  //   }
+  //   else {
+  //     res.render('contact-success');
+  //   }
+  // });
+
 });
 
 
