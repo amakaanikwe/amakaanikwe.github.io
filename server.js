@@ -40,22 +40,14 @@ app.post('/contact', function (req, res) {
   
   smtpTrans.sendMail(mailOpts, function(error, res) { 
     if (error) { 
-          res.json( { message: "You attempted to send a message but this is not implemented yet." });
+          res.sendFile('contact-failure');
         }
         else {
-          res.json( { message: "You attempted to send a message but this is not implemented yet." });
+          res.sendFile('contact-success');
         }
 
   });
 
-  // smtpTrans.sendMail(mailOpts, function (error, response) {
-  //   if (error) { 
-  //     res.render('contact-failure');
-  //   }
-  //   else {
-  //     res.render('contact-success');
-  //   }
-  // });
 
 });
 
