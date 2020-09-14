@@ -310,7 +310,7 @@
                 id="name"
                 name="name"
                 placeholder="Name"
-                type="text"
+                type="name"
                 required
               />
             </div>
@@ -327,9 +327,10 @@
           </div>
           <textarea
             class="form-control"
-            id="message"
+            id="text"
             name="message"
             placeholder="Comment"
+            type="text"
             rows="5"
           ></textarea
           ><br />
@@ -356,6 +357,26 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $("form").on("submit", (e) => {
+        e.preventDefault();
+
+        const email = $("#email").val().trim();
+        const name = $("#name").val().trim();
+        const text = $("#text").val().trim();
+
+        const data = {
+          name,
+          email,
+          text
+        };
+
+        $.post("/email", data, function(){
+          console.log("Server received our data");
+        });
+
+      })
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="public/index_css_scripts/scripts/scrollspy.js"></script>
