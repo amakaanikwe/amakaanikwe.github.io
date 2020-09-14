@@ -10,22 +10,23 @@ const app = express();
 
 const PORT = 8080;
 
-//view engine
-app.engine('handlebars', exphbs());
-app.set("view engine", handlebars);
-
 // Data parsing
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 //Static Folder
 app.use('/public', express.static(path.join(__dirname, "public")));
 
+
 app.get("/", (req, res) => {
-  res.send(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 //POST route from contact form
-app.post('/contact', function (req, res) {
+app.post('/email', function (req, res) {
+  console.log("Data: ", req.body);
+  res.json({message: "Message received"})
+
   let mailOpts, smtpTrans;
   smtpTrans = nodemailer.createTransport({
     host: 'smtp.gmail.com',
