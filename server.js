@@ -1,12 +1,18 @@
 const express = require("express");
-const app = express();
 require('dotenv').config();
-const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const exhbs = require("express-handlebars");
+const nodemailer = require('nodemailer');
 const path = require("path");
 const log = console.log;
 
+const app = express();
+
 const PORT = 8080;
+
+//view engine
+app.engine('handlebars', exphbs());
+app.set("view engine", handlebars);
 
 // Data parsing
 app.use(bodyParser.urlencoded({extended: true}));
@@ -15,7 +21,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/public', express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.send(path.join(__dirname, "index.html"));
 });
 
 //POST route from contact form
