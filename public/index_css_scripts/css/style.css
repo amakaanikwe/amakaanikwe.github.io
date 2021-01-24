@@ -122,6 +122,10 @@ hr {
   margin: 35px;
 }
 
+.custIcon h2 {
+  font-size: 3vh;
+}
+
 .panel-body img{
     opacity: 0.8; 
   }
@@ -131,8 +135,16 @@ hr {
   transition: 0.3s;
 }
 
+div.panel-heading h1 {
+  font-size: 4vh;
+}
+
 ul.lsStyle {
   color: black;
+}
+
+ul.lsStyle li {
+  font-size: 2vh;
 }
 
 /* Container */
@@ -184,6 +196,13 @@ ul.lsStyle {
 a:link {
   text-decoration: none;
 }
+img {
+  display: block;
+}
+.folioImg {
+object-fit: cover;
+margin: 0px;
+}
 
 /* Styling Panels */
 .panel {
@@ -227,15 +246,15 @@ a:link {
 
 @media only screen and (max-width: 1180px) {
   .ulPadding {
-    height: 240px;
+    height: 290px;
   }
-}
+} 
 
 @media only screen and (min-width: 767px) {
   .ulPadding {
     height: 365px;
   }
-}
+} */
 
 .panel-footer {
     background-color: #fff !important;
@@ -271,11 +290,6 @@ a.moreButton:hover, a.moreButton:active {
   border-radius: 5px;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* About Style */
 
@@ -296,6 +310,12 @@ img {
   .about {
     margin: 0px;
   }
+}
+h2.aboutText {
+  font-size: 4vh;
+}
+h4.aboutText {
+  font-size: 2vh;
 }
 
 
